@@ -9,7 +9,7 @@ export default function TopBox() {
         {topDealUsers.map((user) => (
           <div className={Style.listItem} key={user.id}>
             <div className={Style.user}>
-              <img src={user.img} alt={`${user.username} image`} />
+              <img src={`./${user.img}`} alt={`${user.username} image`} />
               <div className={Style.userInfo}>
                 <span className={Style.userName}>{user.username}</span>
                 <span className={Style.email}>{user.email}</span>

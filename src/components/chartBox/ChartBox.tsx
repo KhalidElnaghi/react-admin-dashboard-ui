@@ -17,7 +17,7 @@ export default function ChartBox(props: Props) {
     <div className={Style.chartBox}>
       <div className={Style.boxInfo}>
         <div className={Style.title}>
-          <img src={props.icon} alt="" />
+          <img src={`./${props.icon}`} alt="" />
           <span>{props.title}</span>
         </div>
         <h2>{props.number}</h2>
@@ -27,7 +27,7 @@ export default function ChartBox(props: Props) {
       </div>
       <div className={Style.chartInfo}>
         <div className={Style.chart}>
-          <ResponsiveContainer >
+          <ResponsiveContainer>
             <LineChart data={props.chartData}>
               <Tooltip
                 contentStyle={{

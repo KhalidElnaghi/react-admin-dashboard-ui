@@ -9,8 +9,6 @@ import {
 } from "recharts";
 import Style from "./single.module.scss";
 
-
-
 type Props = {
   id: number;
   img?: string;
@@ -28,7 +26,7 @@ export default function Single(props: Props) {
       <div className={Style.view}>
         <div className={Style.info}>
           <div className={Style.topInfo}>
-            {props.img && <img src={props.img} alt={`${props.title} image`} />}
+            {props.img && <img src={`./${props.img}`} alt={`${props.title} image`} />}
             <h2>{props.title}</h2>
             <button>Update</button>
           </div>
